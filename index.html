@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+    <script>
+//practice array 2 ways
+//first way create a group with value inside 
+//all value in the group should be the same type only ex number just number not mix text and number)
+
+var arr = [10, 5, 6, 9, 3 ]
+document.write(arr)
+document.write("<br>")
+document.write(arr[0])// now we call 0 means first position
+document.write("<br>")
+document.write(arr.length)//length how many value inside array ex above 5 value above
+document.write("<br>")
+document.write(arr[4])
+document.write("<br>")
+    </script>
+
+<script>
+//second way of crate array we use for loop to go each value on array
+
+var fruits = ["grape", "mango", "orange", "berry"]
+//i<fruit.length because i start at position0 and stop at position3
+for (i=0; i<fruits.length; i++){
+document.write(fruits[i])
+document.write("<br>")
+
+
+}
+//to print something need to put ouside loop
+
+document.write(fruits[3])
+document.write("<br>")
+</script>
+
+<script>
+// next we put array inside function
+
+function printArray(){
+    var colors = ["pink", "green", "red", "blue"]
+//i<fruit.length because i start at position0 and stop at position3
+for (i=0; i<colors.length; i++){
+document.write(colors[i])
+document.write("<br>")
+
+
+}
+}
+//call function have to be outside function and loop
+//it will call the whole value
+
+printArray()
+
+//second fuction
+function printArrayTwo(n){
+    var colors = ["pink", "green", "red", "blue"]
+//n means what value we want to show only one not the whole value
+
+document.write(colors[n])
+document.write("<br>")
+
+
+
+}
+//call function have to be outside function and loop
+//it will call the whole value
+
+printArrayTwo(2) //n is which position/we show position 2
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

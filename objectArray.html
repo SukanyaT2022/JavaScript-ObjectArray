@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+<script>
+    //first crate constructor
+var book = function(){
+this.book_name = ""
+this.auther_name = ""
+this.subject = ""
+
+}
+//next we create empty group librariy array
+
+var library = new Array()
+var obj = new book()
+obj.book_name = "Harry Potter"
+obj.book_author = "J.K"
+obj.subject = "fiction"
+
+
+//add value inside array
+
+
+library.push(obj)// library is array and use push fuction to array
+
+document.write(library[0].book_name)
+// we call book name(propertiey of book) the entire object above harry potter at position 0
+
+
+</script>
+
+
+
+    
+</body>
+</html>
